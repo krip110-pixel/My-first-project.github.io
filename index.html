@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Личный кабинет плательщика</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  
+<div class="header">
+  <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="mainMenu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <div class="header-center">
+    <div class="logo">
+      <a href="#" id="logoLink">
+        <img src="logo.png" alt="Логотип" />
+      </a>
+    </div>
+    <nav>
+      <ul class="menu" id="mainMenu">
+        <li>
+          <a href="#">Физ.лица</a>
+          <ul class="submenu">
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">Тарифы</a></li>
+            <li><a href="#">Качество воды</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Юр.лица</a>
+          <ul class="submenu">
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">Тарифы</a></li>
+            <li><a href="#">Контроль сточных вод</a></li>
+            <li><a href="#">Качество воды</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">О предприятии</a>
+          <ul class="submenu">
+            <li><a href="#">История</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Горводоканал на карте</a></li>
+            <li><a href="#">Прием платежей</a></li>
+            <li><a href="#">Раскрытие информации</a></li>
+            <li><a href="#">Нормативно-правовые акты</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Трудоустройство</a>
+          <ul class="submenu">
+            <li><a href="#">Вакансии</a></li>
+            <li><a href="#">Кадровая политика</a></li>
+            <li><a href="#">Прохождение практики</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Контакты</a> 
+      <ul class="submenu">
+        <li><a href="#">Справки для населения по вопросам расчетов:</a></li>
+        <li><a href="tel:+73832049919">+7 (383) 204-99-19</a></li> 
+        <li><a href="#">Тех. поддержка:</a></li>
+        <li><a href="tel:+73833477472">+7 (383) 347-74-72</a></li> 
+        <li><a href="#">Единый диспетчерский пункт по приему аварийных заявок на сетях холодного водоснабжения и водоотведения:</a></li>
+        <li><a href="tel:+73833477474">+7 (383) 347-74-74</a></li> 
+        <li><a href="#">Эл. почта:</a></li>
+        <li><a href="mailto:ask@gorvodokanal.com">ask@gorvodokanal.com</a></li> 
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+
+  <div class="header-right">
+    <span class="company-name">Гусейнова Дарья Федоровна</span>
+    <span class="divider-bar">|</span>
+    <span class="exit-link">
+      <a href="#">Выход <span class="arrow">→</span></a>
+    </span>
+  </div>
+</div>
+
+<!-- Основной контент личного кабинета -->
+<div class="dashboard-container">
+    <!-- Приветствие пользователя -->
+    <div class="welcome-section">
+        <h1>Здравствуйте, Гусейнова Дарья Федоровна</h1>
+        <p>Лицевой счет: 1234567890 • Адрес: ул. Ленина, д. 10, кв. 25</p>
+    </div>
+
+    <!-- Меню для перехода к основным разделам -->
+    <div class="nav-sections">
+        <a href="#" class="nav-section-item">
+            <span class="nav-icon">📊</span>
+            <span>Показания счетчиков</span>
+        </a>
+        <a href="#" class="nav-section-item">
+            <span class="nav-icon">💰</span>
+            <span>Оплата услуг</span>
+        </a>
+        <a href="#" class="nav-section-item">
+            <span class="nav-icon">📄</span>
+            <span>История платежей</span>
+        </a>
+        <a href="#" class="nav-section-item">
+            <span class="nav-icon">🔧</span>
+            <span>Заявки</span>
+        </a>
+        <a href="#" class="nav-section-item">
+            <span class="nav-icon">📋</span>
+            <span>Договоры</span>
+        </a>
+        <a href="#" class="nav-section-item">
+            <span class="nav-icon">⚙️</span>
+            <span>Настройки</span>
+        </a>
+    </div>
+
+    <!-- Информационные панели -->
+    <div class="info-panels">
+        <!-- Блок с текущими показаниями счетчиков -->
+        <div class="panel panel-meters">
+            <div class="panel-header">
+                <h2>Текущие показания счетчиков</h2>
+                <a href="#" class="panel-link">Все показания →</a>
+            </div>
+            <div class="meters-list">
+                <div class="meter-item">
+                    <div class="meter-info">
+                        <span class="meter-name">Холодная вода</span>
+                        <span class="meter-number">(счетчик #123456)</span>
+                    </div>
+                    <div class="meter-reading">
+                        <span class="reading-value">1245</span>
+                        <span class="reading-unit">м³</span>
+                    </div>
+                    <div class="meter-date">последние: 15.02.2026</div>
+                </div>
+                <div class="meter-item">
+                    <div class="meter-info">
+                        <span class="meter-name">Горячая вода</span>
+                        <span class="meter-number">(счетчик #789012)</span>
+                    </div>
+                    <div class="meter-reading">
+                        <span class="reading-value">876</span>
+                        <span class="reading-unit">м³</span>
+                    </div>
+                    <div class="meter-date">последние: 15.02.2026</div>
+                </div>
+                <div class="meter-item">
+                    <div class="meter-info">
+                        <span class="meter-name">Водоотведение</span>
+                        <span class="meter-number">(рассчитывается)</span>
+                    </div>
+                    <div class="meter-reading">
+                        <span class="reading-value">2121</span>
+                        <span class="reading-unit">м³</span>
+                    </div>
+                    <div class="meter-date">сумма ХВС + ГВС</div>
+                </div>
+            </div>
+            <button class="btn-submit-reading">Передать показания</button>
+        </div>
+
+        <!-- Блок с последними начислениями и задолженностью -->
+        <div class="panel panel-payments">
+            <div class="panel-header">
+                <h2>Начисления и задолженность</h2>
+                <a href="#" class="panel-link">Детализация →</a>
+            </div>
+            <div class="payments-summary">
+                <div class="summary-item">
+                    <span class="summary-label">Задолженность:</span>
+                    <span class="summary-value negative">0,00 ₽</span>
+                </div>
+                <div class="summary-item">
+                    <span class="summary-label">Переплата:</span>
+                    <span class="summary-value positive">0,00 ₽</span>
+                </div>
+                <div class="summary-item total">
+                    <span class="summary-label">К оплате всего:</span>
+                    <span class="summary-value total-value">0,00 ₽</span>
+                </div>
+            </div>
+            <div class="recent-charges">
+                <h3>Последние начисления</h3>
+                <div class="charge-item">
+                    <span class="charge-period">Февраль 2026</span>
+                    <span class="charge-amount">1 892,34 ₽</span>
+                    <span class="charge-status paid">оплачено</span>
+                </div>
+                <div class="charge-item">
+                    <span class="charge-period">Январь 2026</span>
+                    <span class="charge-amount">1 845,67 ₽</span>
+                    <span class="charge-status paid">оплачено</span>
+                </div>
+                <div class="charge-item">
+                    <span class="charge-period">Декабрь 2025</span>
+                    <span class="charge-amount">2 101,45 ₽</span>
+                    <span class="charge-status paid">оплачено</span>
+                </div>
+            </div>
+            <button class="btn-pay">Оплатить сейчас</button>
+        </div>
+
+        <!-- Блок с последними новостями -->
+        <div class="panel panel-news">
+            <div class="panel-header">
+                <h2>Последние новости</h2>
+                <a href="#" class="panel-link">Все новости →</a>
+            </div>
+            <div class="news-feed">
+                <div class="news-item">
+                    <span class="news-badge">Важно</span>
+                    <div class="news-content">
+                        <h4>Плановые работы на водопроводе</h4>
+                        <p>20.02.2026 с 10:00 до 16:00 будет отключено водоснабжение по ул. Ленина, 10-25</p>
+                        <span class="news-date">19.02.2026</span>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <div class="news-content">
+                        <h4>Новые тарифы с 1 апреля 2026</h4>
+                        <p>Утверждены новые тарифы на холодное водоснабжение и водоотведение</p>
+                        <span class="news-date">15.02.2026</span>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <div class="news-content">
+                        <h4>График работы в праздничные дни</h4>
+                        <p>Режим работы офисов и контакт-центра в майские праздники</p>
+                        <span class="news-date">10.02.2026</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="footer-info">
+  <div class="footer-divider"></div>
+  <div class="footer-columns">
+    <div class="footer-col hidden-mobile">
+      <b>ФИЗ. ЛИЦАМ &rarr;</b>
+      <a href="#">Услуги</a>
+      <a href="#">Тарифы</a>
+      <a href="#">Качество воды</a>
+    </div>
+    <div class="footer-col hidden-mobile">
+      <b>ЮР. ЛИЦАМ &rarr;</b>
+      <a href="#">Услуги</a>
+      <a href="#">Тарифы</a>
+      <a href="#">Контроль сточных вод</a>
+      <a href="#">Качество воды</a>
+    </div>
+    <div class="footer-col hidden-mobile">
+      <b>О ПРЕДПРИЯТИИ &rarr;</b>
+      <a href="#">История</a>
+      <a href="#">Контакты</a>
+      <a href="#">Горводоканал на карте</a>
+      <a href="#">Прием платежей</a>
+      <a href="#">Раскрытие информации</a>
+      <a href="#">Нормативно-правовые акты</a>
+    </div>
+    <div class="footer-col hidden-mobile">
+      <b>ТРУДОУСТРОЙСТВО &rarr;</b>
+      <a href="#">Вакансии</a>
+      <a href="#">Кадровая политика</a>
+      <a href="#">Прохождение практики</a>
+      <a href="#">Контакты</a>
+    </div>
+    <div class="footer-col contacts-col">
+      <b>КОНТАКТЫ &rarr;</b>
+      <span class="footer-label">Справки для населения по вопросам расчетов:</span>
+      <a href="tel:+73832049919">+7 (383) 204-99-19</a>
+      <span class="footer-label">Тех. поддержка:</span>
+      <a href="tel:+73833477472">+7 (383) 347-74-72</a>
+      <span class="footer-label">Отдел по инспекторской работе(личный кабинет ЮР.лиц):</span>
+      <a href="tel:+73832907396">+7 (383) 290-73-96</a>
+      <span class="footer-label">Единый диспетчерский пункт по приему аварийных заявок на сетях холодного водоснабжения и водоотведения:</span>
+      <a href="tel:+73833477474">+7 (383) 347-74-74</a>
+      <span class="footer-label">Эл. почта:</span>
+      <a href="mailto:ask@gorvodokanal.com">ask@gorvodokanal.com</a>
+    </div>
+  </div>
+</div>
+<div class="footer-bottom">
+  МУП г. Новосибирска «ГОРВОДОКАНАЛ», 2025 г.
+</div>
+
+<script>
+  const burger = document.getElementById('menuToggle');
+  const menu = document.getElementById('mainMenu');
+
+  burger.addEventListener('click', function(){
+    burger.classList.toggle('open');
+    menu.classList.toggle('show');
+  });
+</script>
+
+
+</body>
+</html>
